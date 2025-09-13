@@ -3,21 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A Special Wish</title>
+  <title>Happy Birthday Niyati 🎉</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      text-align: center;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      color: white;
+      padding: 50px;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff6b6b, 0 0 30px #ff4757; }
+      to   { text-shadow: 0 0 20px #fff, 0 0 30px #ff9ff3, 0 0 40px #ff6b6b; }
+    }
+    .card {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      display: inline-block;
+    }
+  </style>
 </head>
-<body class="bg-card">
-  <div class="wish-card">
-    <h2>💌 A Birthday Note for You 💌</h2>
-    <p>
-      Dear Niyati,<br><br>
-      On your special day, I just want to say thank you for being such a wonderful friend.  
-      May your year ahead be filled with happiness, success, and lots of memories worth cherishing.  
-      Keep smiling always — you truly deserve the best. <br><br>
-      🎉 Happy Birthday once again! 🎉 <br>
-      — From Your Friend
-    </p>
-    <a href="index.html" class="btn">🎈 Back to Start</a>
+<body>
+  <div class="card">
+    <h1>🎂 Happy Birthday Niyati 🎉</h1>
+    <p>Wishing you a day filled with laughter, joy, and lots of cake 🍰.<br>
+       May all your dreams come true and this year be your best one yet! 🌸</p>
+    <p>Your friend is sending you this little surprise website, made just for you 💖</p>
   </div>
+
+  <!-- Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="confetti.js"></script>
+
+  <script>
+    // Trigger confetti when page loads 🎉
+    window.onload = () => {
+      startConfetti();
+    };
+  </script>
 </body>
 </html>
